@@ -1,0 +1,7 @@
+data/
+summarized_data/
+data.zip
+admin-debug.json
+admin-experiment.json
+.vscode/
+.venv/
