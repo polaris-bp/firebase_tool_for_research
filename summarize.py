@@ -79,6 +79,8 @@ class Summarizer():
                     user / 'csv' / mode / 'app_usage_time.csv'
                 # pandas で csv を読み込み
                 df_input = pd.read_csv(user_csv_path)
+                # 利用期間でフィルタ
+                df_input = self.filter_df(user, df_input)
                 # 合計を取得
                 sum_app_usage_time = df_input['appUsageTime'].sum()
                 # df にユーザ名とデータを追加
