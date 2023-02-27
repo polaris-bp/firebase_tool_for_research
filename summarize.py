@@ -227,6 +227,8 @@ class Summarizer():
         # print(end)
         df_filtered = df_input[(df_input['time'] >= start)
                                & (df_input['time'] <= end)]
+        print("before: {}".format(df_input.size))
+        print("after: {}".format(df_filtered.size))
         return df_filtered
 
 
